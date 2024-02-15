@@ -1,27 +1,29 @@
-import React from "react";
 import css from "./Profile.module.css";
 
 export const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
+    <div className={css.profileCard}>
       <div>
         <img src={image} alt="User avatar" className={css.profileImage} />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <div className={css.profileInfo}>
+          <p className={css.name}>{name}</p>
+          <p className={css.info}>{tag}</p>
+          <p className={css.info}>{location}</p>
+        </div>
       </div>
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+
+      <ul className={css.profileStats}>
+        <li className={css.profileStatsItem}>
+          <span className={css.textStatsItem}>Followers</span>
+          <span className={css.allData}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
+        <li className={css.profileStatsItem}>
+          <span className={css.textStatsItem}>Views</span>
+          <span className={css.allData}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+        <li className={css.profileStatsItem}>
+          <span className={css.textStatsItem}>Likes</span>
+          <span className={css.allData}>{stats.likes}</span>
         </li>
       </ul>
     </div>
