@@ -1,7 +1,61 @@
-ul,
-ol {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px 0 0 0;
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #45433f;
+}
+
+.profileInfo {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0 0 20px 0;
+}
+
+.info {
+  color: #808080;
+}
+
+.profileStats {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.profileStatsItem {
+  width: calc(100% / 3);
+  border: 1px solid #808080;
+  background-color: #e0e0e0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textStatsItem {
+  font-weight: 600;
+  font-size: 150%;
+}
+
+.allData {
+  font-weight: 900;
+  font-size: 110%;
 }

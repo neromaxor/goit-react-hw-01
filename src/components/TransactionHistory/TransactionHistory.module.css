@@ -1,0 +1,23 @@
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thead {
+  background-color: black;
+  color: white;
+}
+
+.whiteRow {
+  background-color: white;
+}
+
+.grayRow {
+  background-color: lightgray;
+}
+
+.cell {
+  padding: 8px;
+  border: 1px solid black;
+}
